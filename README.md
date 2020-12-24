@@ -31,7 +31,7 @@ docker run -it --volume `pwd -W`:/build tttza/pandoc-latex-ja:latest "pandoc [OP
 
 変換例(bash):
 ```bash
-docker run -it --volume `pwd -W`:/build tttza/pandoc-latex-ja:latest "pandoc sample/sample.md -o publish/sample.pdf -V classoption="pandoc" -V documentclass=bxjsarticle --pdf-engine=xelatex --filter=pandoc-crossref"
+docker run -it --volume $PWD:/build tttza/pandoc-latex-ja:latest "pandoc sample/sample.md -o publish/sample.pdf -V classoption="pandoc" -V documentclass=bxjsarticle --pdf-engine=xelatex --filter=pandoc-crossref"
 ```
 
 変換例(cmd):
