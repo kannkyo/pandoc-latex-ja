@@ -12,7 +12,8 @@ RUN tlmgr install \
 # gitlab-ciで動作するよう修正。 ref: https://github.com/brospars/docker-pandoc-gitlab-ci
 RUN apk update && apk add \
     bash \
-    git
+    git \
+    wkhtmltopdf
 
 ENTRYPOINT ["/bin/bash", "-c"]
 
