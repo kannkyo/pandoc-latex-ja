@@ -14,7 +14,7 @@ on:
   pull_request:
 
 env:
-  IMAGE_NAME: kannkyo/pandoc-latex-ja
+  IMAGE_NAME: pandoc-latex-ja
 
 jobs:
   # Run tests.
